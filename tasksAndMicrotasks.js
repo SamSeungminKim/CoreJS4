@@ -19,18 +19,18 @@
 const asyncExample = async (a) => {
   console.log(a, "started") // 2
 
- tmp = await new Promise((resolve,reject) => { // 3
-  setTimeout(()=>{ // 4
-    console.log(a, "timeout")
-  },0)
-  let n = a
-  for (let i =0;i<10000000;i++) n+=0.0000001
-  console.log(n) // 5
-  return resolve(a)
-})
+  tmp = await new Promise((resolve,reject) => { // 3
+    setTimeout(()=>{ // 4
+      console.log(a, "timeout")
+    },0)
+    let n = a
+    for (let i =0;i<10000000;i++) n+=0.0000001
+    console.log(n) // 5
+    return resolve(a)
+  })
 
-console.log(a, "finished") // 11
-return tmp
+  console.log(a, "finished") // 11
+  return tmp
 }
  
 for (let i = 0; i <2; i++) {

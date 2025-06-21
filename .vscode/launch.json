@@ -20,7 +20,8 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\event_loop_2.js"
+            //"program": "${workspaceFolder}\\event_loop_2.js"
+            "program": "${workspaceFolder}\\tasksAndMicrotasks.js"
         }
     ]
 }
